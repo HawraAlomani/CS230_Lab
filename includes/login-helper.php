@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST['login-submit'])){
-    require'dbhandler.php';
+    require 'dbhandler.php';
     $uname_email = $_POST['uname'];
     $passw = $_POST['pwd'];
 
@@ -31,9 +31,9 @@ if(isset($_POST['login-submit'])){
             $pass_check= password_verify($passw, $data['password']);
             if($pass_check == true){
                 session_start();
-                $_SESSION['uid']= $date['uid'];
-                $_SESSION['fname']= $date['fname'];
-                $_SESSION['username']= $date['uname'];
+                $_SESSION['uid']= $data['uid'];
+                $_SESSION['fname']= $data['fname'];
+                $_SESSION['username']= $data['uname'];
 
                 header("Location: ../profile.php?login=Success");
                 exit();
