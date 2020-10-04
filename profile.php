@@ -4,7 +4,7 @@ require 'includes/dbhandler.php';
 ?>
 
 <main>
-    
+
 <?php
 if (isset($_SESSION['uid'])) {   
     $prof_user = $_SESSION['username'];
@@ -37,7 +37,7 @@ if (isset($_SESSION['uid'])) {
         font-weight: bold;
     }
     
-    </style>
+ </style>
     
     <script>
         function triggered(){
