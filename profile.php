@@ -62,7 +62,7 @@ if (isset($_SESSION['uid'])) {
         <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
         <div class="form-group">
             <img src="<?php echo $photo;?>" onclick="triggered();" id="prof-display">
-            <label for="prof-image" id="uname-style"> <?php echo $prof_user;?> </label>
+            <label for="prof-image" id="uname-style"> <?php echo $prof_user;?></label>
             <input type="file" name="prof-image" id="prof-image" onchange="preview(this)" class="form-control" style="display: none;">
         </div>
         <div class="form-group">
@@ -84,6 +84,6 @@ if (isset($_SESSION['uid'])) {
     exit();
 }
 
-?>      
+?>
       
 </main>
